@@ -106,7 +106,7 @@ const Experience = () => {
             Experience
           </motion.h2>
 
-          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-800 before:to-transparent">
+          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-800 before:to-transparent">
             {experienceData.map((exp, idx) => (
               <motion.div 
                 key={idx}
@@ -117,25 +117,25 @@ const Experience = () => {
                 className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
               >
                 {/* Timeline Node */}
-                <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-emerald-400">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 shadow shrink-0 absolute left-0 md:relative md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-emerald-400">
                   <span className="w-3 h-3 bg-emerald-400 rounded-full shadow-[0_0_10px_rgba(52,211,153,0.8)]"></span>
                 </div>
                 
                 {/* Card Content */}
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-zinc-900/50 backdrop-blur-md p-6 rounded-[2rem] border border-white/5 shadow-xl transition-all group-hover:border-emerald-500/20 group-hover:bg-zinc-800/50 group-hover:shadow-[0_0_20px_rgba(52,211,153,0.05)]">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
-                    <h3 className="font-bold text-xl text-white tracking-tight">{exp.role}</h3>
-                    <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">
+                <div className="ml-14 md:ml-0 w-full md:w-[calc(50%-2.5rem)] bg-zinc-900/50 backdrop-blur-md p-6 rounded-[1.5rem] md:rounded-[2rem] border border-white/5 shadow-xl transition-all group-hover:border-emerald-500/20 group-hover:bg-zinc-800/50 group-hover:shadow-[0_0_20px_rgba(52,211,153,0.05)]">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                    <h3 className="font-bold text-lg md:text-xl text-white tracking-tight">{exp.role}</h3>
+                    <span className="inline-flex w-fit items-center justify-center px-3 py-1 rounded-full text-[10px] md:text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">
                       {exp.type}
                     </span>
                   </div>
-                  <div className="text-zinc-300 font-medium mb-1">{exp.company}</div>
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-500 mb-4 font-medium uppercase tracking-wider">
+                  <div className="text-zinc-300 text-sm md:text-base font-medium mb-1">{exp.company}</div>
+                  <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[12px] md:text-sm text-zinc-500 mb-4 font-medium uppercase tracking-wider">
                     <span>{exp.duration}</span>
                     <span className="w-1 h-1 bg-zinc-700 rounded-full"></span>
                     <span>{exp.location}</span>
                   </div>
-                  <div className="text-zinc-400 leading-relaxed text-[15px]">{exp.description}</div>
+                  <div className="text-zinc-400 leading-relaxed text-[14px] md:text-[15px]">{exp.description}</div>
                 </div>
               </motion.div>
             ))}
@@ -153,7 +153,7 @@ const Experience = () => {
             Achievements & Certifications
           </motion.h2>
 
-          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-800 before:to-transparent">
+          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-800 before:to-transparent">
             {achievementsData.map((exp, idx) => (
               <motion.div 
                 key={idx}
@@ -164,25 +164,25 @@ const Experience = () => {
                 className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
               >
                 {/* Timeline Node */}
-                <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-blue-400">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 shadow shrink-0 absolute left-0 md:relative md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-blue-400">
                   <span className="w-3 h-3 bg-blue-400 rounded-full shadow-[0_0_10px_rgba(96,165,250,0.8)]"></span>
                 </div>
                 
                 {/* Card Content */}
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-zinc-900/50 backdrop-blur-md p-6 rounded-[2rem] border border-white/5 shadow-xl transition-all group-hover:border-blue-500/20 group-hover:bg-zinc-800/50 group-hover:shadow-[0_0_20px_rgba(96,165,250,0.05)]">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
-                    <h3 className="font-bold text-xl text-white tracking-tight">{exp.role}</h3>
-                    <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 whitespace-nowrap">
+                <div className="ml-14 md:ml-0 w-full md:w-[calc(50%-2.5rem)] bg-zinc-900/50 backdrop-blur-md p-6 rounded-[1.5rem] md:rounded-[2rem] border border-white/5 shadow-xl transition-all group-hover:border-blue-500/20 group-hover:bg-zinc-800/50 group-hover:shadow-[0_0_20px_rgba(96,165,250,0.05)]">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                    <h3 className="font-bold text-lg md:text-xl text-white tracking-tight">{exp.role}</h3>
+                    <span className="inline-flex w-fit items-center justify-center px-3 py-1 rounded-full text-[10px] md:text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 whitespace-nowrap">
                       {exp.type}
                     </span>
                   </div>
-                  <div className="text-zinc-300 font-medium mb-1">{exp.company}</div>
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-500 mb-4 font-medium uppercase tracking-wider">
+                  <div className="text-zinc-300 text-sm md:text-base font-medium mb-1">{exp.company}</div>
+                  <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[12px] md:text-sm text-zinc-500 mb-4 font-medium uppercase tracking-wider">
                     <span>{exp.duration}</span>
                     <span className="w-1 h-1 bg-zinc-700 rounded-full"></span>
                     <span>{exp.location}</span>
                   </div>
-                  <div className="text-zinc-400 leading-relaxed text-[15px]">{exp.description}</div>
+                  <div className="text-zinc-400 leading-relaxed text-[14px] md:text-[15px]">{exp.description}</div>
                 </div>
               </motion.div>
             ))}

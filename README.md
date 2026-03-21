@@ -2,8 +2,6 @@
 
 A stunning, interactive, and highly responsive personal portfolio website built to showcase my projects, skills, and professional experience. Designed with a deep, glassmorphic "Neon Dark" aesthetic utilizing cutting-edge web technologies.
 
-![Portfolio Preview Showcase](public/photo.jpg)
-
 ## 🌟 Key Features
 - **Immersive UI/UX**: Deep dark mode with vibrant blue, purple, and emerald mesh gradient neon highlights.
 - **Glassmorphism**: Beautiful translucent cards with backdrop blurs and subtle interactive borders.

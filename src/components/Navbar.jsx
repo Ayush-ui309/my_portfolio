@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -50,12 +52,43 @@ const Navbar = () => {
             );
           })}
         </div>
-        <button className="md:hidden text-zinc-900">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+        
+        {/* Mobile Menu Button */}
+        <button 
+          className="md:hidden text-zinc-900 p-2 rounded-lg bg-zinc-100/50 backdrop-blur-sm"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-white/95 backdrop-blur-xl border-b border-zinc-200 overflow-hidden shadow-xl"
+          >
+            <div className="container mx-auto px-6 py-8 flex flex-col space-y-4">
+              {navLinks.map((link) => {
+                const isActive = location.pathname === link.href;
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-lg font-bold transition-all px-4 py-3 rounded-2xl ${isActive ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30' : 'text-zinc-600 hover:bg-zinc-100 hover:translate-x-2'}`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };

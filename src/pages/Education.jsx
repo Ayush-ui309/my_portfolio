@@ -56,12 +56,12 @@ const Education = () => {
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
-           className="mb-16"
+           className="mb-12 md:mb-16 text-center md:text-left"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white tracking-tight">
             My Education
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl">
+          <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto md:mx-0">
             My academic journey and institutional background.
           </p>
         </motion.div>
@@ -79,24 +79,24 @@ const Education = () => {
                 <GraduationCap className="text-blue-400" size={20} />
               </div>
               
-              <div className="bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-[2rem] p-8 hover:border-white/10 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
-                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-5">
+              <div className="bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 hover:border-white/10 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-3 md:gap-4 mb-5">
                   <div>
-                    <h3 className="text-2xl font-bold text-white leading-tight">{edu.degree}</h3>
-                    <h4 className="text-lg text-zinc-400 font-semibold mt-1">{edu.institution}</h4>
+                    <h3 className="text-xl md:text-2xl font-bold text-white leading-tight">{edu.degree}</h3>
+                    <h4 className="text-base md:text-lg text-zinc-400 font-semibold mt-1">{edu.institution}</h4>
                   </div>
-                  <div className="inline-flex px-4 py-1.5 bg-zinc-800 text-zinc-300 rounded-full text-sm font-semibold border border-zinc-700 whitespace-nowrap">
+                  <div className="inline-flex w-fit px-4 py-1.5 bg-zinc-800 text-zinc-300 rounded-full text-[12px] md:text-sm font-semibold border border-zinc-700 whitespace-nowrap">
                     {edu.status}
                   </div>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-5 mb-6 text-zinc-400 text-sm font-medium">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 mb-6 text-zinc-400 text-[13px] md:text-sm font-medium">
                   <div className="flex items-center gap-1.5">
-                    <Calendar size={16} />
+                    <Calendar size={14} className="md:w-4 md:h-4"/>
                     <span>{edu.duration}</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <MapPin size={16} />
+                    <MapPin size={14} className="md:w-4 md:h-4"/>
                     <span>{edu.location}</span>
                   </div>
                 </div>

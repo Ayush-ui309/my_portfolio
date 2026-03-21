@@ -36,11 +36,11 @@ const Resume = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex-grow w-full bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-2xl md:rounded-[2rem] shadow-2xl relative flex flex-col items-center justify-start overflow-hidden"
-          style={{ height: '75vh' }}
+          className="flex-grow w-full bg-zinc-900/50 backdrop-blur-md border border-white/5 rounded-xl md:rounded-[2rem] shadow-2xl relative flex flex-col items-center justify-start overflow-hidden"
+          style={{ height: '70vh', minHeight: '500px' }}
         >
           {/* Top Bar for Glassmorphic styling */}
-          <div className="w-full h-12 bg-zinc-950/80 border-b border-white/5 flex items-center px-4 gap-2 absolute top-0 left-0 z-10">
+          <div className="w-full h-10 md:h-12 bg-zinc-950/80 border-b border-white/5 flex items-center px-4 gap-2 absolute top-0 left-0 z-10">
             <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
             <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
