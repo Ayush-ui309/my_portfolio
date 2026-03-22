@@ -28,7 +28,7 @@ const Contact = () => {
               <p className="text-zinc-400 max-w-lg">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-4">
-                <a href="mailto:ayush@example.com" className="flex items-center justify-center gap-4 text-zinc-400 hover:text-white transition-all group bg-zinc-950/50 hover:bg-zinc-800/80 border border-zinc-800 hover:border-emerald-500/50 py-5 px-6 rounded-2xl">
+                <a href="mailto:ayushrktsingh2006@gmail.com" className="flex items-center justify-center gap-4 text-zinc-400 hover:text-white transition-all group bg-zinc-950/50 hover:bg-zinc-800/80 border border-zinc-800 hover:border-emerald-500/50 py-5 px-6 rounded-2xl">
                   <Mail size={24} />
                   <span className="font-semibold text-zinc-200 text-lg">Email Me</span>
                 </a>
@@ -38,7 +38,7 @@ const Contact = () => {
                   <span className="font-semibold text-zinc-200 text-lg">LinkedIn</span>
                 </a>
 
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-4 text-zinc-400 hover:text-white transition-all group bg-zinc-950/50 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-500/50 py-5 px-6 rounded-2xl">
+                <a href="https://github.com/Ayush-ui309" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-4 text-zinc-400 hover:text-white transition-all group bg-zinc-950/50 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-500/50 py-5 px-6 rounded-2xl">
                   <Github size={24} />
                   <span className="font-semibold text-zinc-200 text-lg">GitHub</span>
                 </a>

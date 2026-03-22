@@ -17,7 +17,7 @@ const Footer = () => {
               Always eager for new challenges and collaborations.
             </p>
             <div className="flex gap-4">
-              <a href="https://github.com/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-center text-zinc-400 hover:text-white hover:border-zinc-700 transition-all hover:-translate-y-1">
+              <a href="https://github.com/Ayush-ui309" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-center text-zinc-400 hover:text-white hover:border-zinc-700 transition-all hover:-translate-y-1">
                 <Github size={20} />
               </a>
               <a href="https://www.linkedin.com/in/ayush-kumar-singh-598916379/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-center text-zinc-400 hover:text-blue-400 hover:border-blue-500/50 transition-all hover:-translate-y-1">
@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="https://x.com/10a_ayush47365" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-center text-zinc-400 hover:text-white hover:border-white/50 transition-all hover:-translate-y-1">
                 <Twitter size={20} />
               </a>
-              <a href="mailto:ayush@example.com" className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-center text-zinc-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+              <a href="mailto:ayushrktsingh2006@gmail.com" className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 shadow-sm flex items-center justify-center text-zinc-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
                 <Mail size={20} />
               </a>
             </div>
